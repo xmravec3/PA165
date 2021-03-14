@@ -18,6 +18,10 @@ public class UnknownExchangeRateException extends RuntimeException {
         super(message);
     }
 
+    public UnknownExchangeRateException(Throwable throwable) {
+        super(throwable);
+    }
+
     /**
      * Constructs an instance of <code>UnsupportedCurrencyException</code> with
      * the specified detail message and cause.
